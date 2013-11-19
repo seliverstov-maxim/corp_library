@@ -6,9 +6,12 @@ gem 'rails', '4.0.1'
 gem 'pg'
 gem 'puma'
 gem 'haml-rails'
+gem 'less-rails'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'minitest-rails'
+gem 'therubyracer'
+gem 'metro-ui-rails'
 
 group :test do
   gem 'rake'

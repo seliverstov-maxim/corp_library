@@ -1,0 +1,16 @@
+.nav-bar
+  .nav-bar-inner.padding10
+    %span.pull-menu
+    %a{href: "/"}
+      %span.element.brand
+        %span.metro-ui-logo.place-left
+        %span.name CorpLibrary
+    %ul.menu
+      %li= link_to "Home", "/"
+      %li{"data-role" => "dropdown"}
+        %a{href: "#"} Menu
+        %ul.dropdown-menu
+          %li= link_to "Link1", "/path1"
+          %li= link_to "Link2", "/path2"
+          %li.divider
+          %li= link_to "Link3", "/path3"
