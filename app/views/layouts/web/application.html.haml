@@ -3,12 +3,12 @@
   %head
     = render partial: 'layouts/web/shared/meta'
   %body.metrouicss
-    .page
+    .page{id: 'page-content'}
       = render partial: 'layouts/web/shared/navigation_panel'
       .page-region
         .page-region-content
           .grid
             .row
               = yield
-      = render partial: 'layouts/web/shared/footer'
+    = render partial: 'layouts/web/shared/footer'
     = javascript_include_tag "application"
