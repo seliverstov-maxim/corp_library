@@ -1,0 +1,22 @@
+setup: &setup
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password:
+
+staging:
+  <<: *setup
+  database: lib_staging
+
+development:
+  <<: *setup
+  database: lib_development
+
+production:
+  <<: *setup
+  database: lib_production
+
+test:
+  <<: *setup
+  database: lib_test
+
