@@ -1,1 +1,32 @@
-%h1= 'books'
+
+.row
+  .col-md-9
+    %h1
+      = 'Books'
+  .col-md-3
+    = link_to new_admin_book_path, :class => 'btn btn-success add-button' do
+      = 'Add book'
+      %i.icon-plus
+
+- if @books.any?
+  %table.table.table-striped
+    %thead
+      %tr
+        %th= han(:books, :id)
+        %th= han(:books, :title)
+        %th= han(:books, :image)
+        %th
+    %tbody
+      - @books.each do |book|
+        %tr
+          %td= book.id
+          %td= book.title
+          %td= book.image
+          %td
+            = link_to edit_admin_book_path(book) do
+              %i.icon-edit
+            = link_to admin_book_path(book), method: :delete do
+              %i.icon-remove
+  / = paginate @news, theme: 'bootstrap'
+- else
+  %h2= 'No Books'

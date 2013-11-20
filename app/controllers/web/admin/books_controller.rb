@@ -1,5 +1,6 @@
 class Web::Admin::BooksController < Web::Admin::ApplicationController
   def index
+    @books = Book.all
   end
 
   def new
