@@ -13,6 +13,9 @@ gem 'minitest-rails'
 gem 'therubyracer'
 gem 'metro-ui-rails'
 
+gem 'less-rails-bootstrap'
+gem 'twitter-bootstrap-rails', github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
+
 group :test do
   gem 'rake'
   gem 'spring'
