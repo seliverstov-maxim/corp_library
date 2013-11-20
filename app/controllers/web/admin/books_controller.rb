@@ -1,4 +1,4 @@
-class Book < Web::Admin::AplicationController
+class Web::Admin::BooksController < Web::Admin::ApplicationController
   def index
   end
 

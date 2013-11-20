@@ -1,3 +1,3 @@
-class Web::Admin::AplicationController < Web::ApplicationController
+class Web::Admin::ApplicationController < Web::ApplicationController
 
 end
